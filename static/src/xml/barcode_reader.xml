@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <t t-name="hz_barcode_scanner.BarcodeReader" owl="1">
+        <div class="vh-100 text-white bg-dark position-relative">
+            <div class="card position-absolute top-50 start-50 translate-middle" style="width: 50rem;">
+                  <img t-att-src="state.company_image_url" class="card-img-top"
+                       t-att-alt="state.company_data.currentCompany.name"/>
+                <div class="card-body">
+                    <h5 class="card-title"><span t-esc="state.company_data.currentCompany.name"/></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a t-att-href="state.company_image_url" class="btn btn-primary">Go Somewhere</a>
+                    </div>
+                </div>
+        </div>
+    </t>
+
+</templates>
